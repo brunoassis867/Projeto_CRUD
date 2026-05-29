@@ -16,7 +16,7 @@ public class ConnectionFactory {
                     + mydatabase
                     + "?useSSL=false";
             String username = "root";
-            String password = "9656";
+            String password = "";
             return DriverManager.getConnection(url, username, password);
         } catch (Exception ex) {
             throw new RuntimeException("Conexão falhou: " + ex.getMessage());
